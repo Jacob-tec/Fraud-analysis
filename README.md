@@ -1,30 +1,83 @@
 # Fraud-analysis
-An interactive data visualization dashboard built with Streamlit and Plotly to explore, filter, and analyze large-scale credit card transaction datasets. Includes end-to-end workflow from raw data cleaning (Jupyter notebooks) to fraud pattern analysis, with visual reports and interactive filters for transaction time, amount, and merchant categories.
+Credit Card Fraud Detection Dashboard
 
-Features
+An interactive Streamlit + Plotly dashboard for exploring, filtering, and analyzing credit card transaction datasets. This project includes data cleaning workflows, fraud analysis visualizations, and a fully interactive dashboard for detecting suspicious patterns in transactions.
+📂 Project Structure
 
-    📊 Interactive Dashboard – Built with Streamlit for real-time data exploration.
+credit-card-analysis/
+│
+├── app/
+│   └── dashboard.py          # Streamlit dashboard code
+│
+├── data/
+│   ├── raw/                  # Place raw dataset here
+│   └── cleansed/             # Output folder for cleaned dataset
+│
+├── notebooks/
+│   ├── data_cleaning.ipynb   # Data preprocessing steps
+│   ├── eda.ipynb              # Exploratory Data Analysis
+│   └── visualizations.ipynb   # Chart creation
+│
+└── reports/                   # Pre-generated plots
 
-    🧹 Data Cleaning Pipeline – Jupyter notebooks for preprocessing and feature preparation.
+📥 Downloading the Data
 
-    🔍 Fraud Analysis – Visual insights into transaction patterns, amounts, and times.
+The dataset used in this project is Fraud Detection Dataset from Kaggle.
+Since the dataset is too large to host on GitHub, you need to download it manually:
 
-    🖼 Pre-generated Reports – PNG charts for quick reference.
+    Create a free Kaggle account.
 
-    ⚡ Fast, Lightweight, and Open Source.
+    Go to the dataset page: Fraud Detection Dataset.
 
-Tech Stack
+    Click Download and extract the contents.
 
-    Python, Pandas, NumPy
+    Place the file fraudTest.csv into:
 
-    Streamlit, Plotly Express
+    data/raw/
 
-    Jupyter Notebooks
+🧹 Cleaning the Data
 
-Use Cases
+    Open the notebooks/data_cleaning.ipynb in Jupyter Notebook or Jupyter Lab.
 
-    Detect and understand fraud trends
+    Run all cells — this will:
 
-    Explore patterns in large financial datasets
+        Remove duplicates and null values
 
-    Build financial data dashboards
+        Format columns (dates, transaction amounts)
+
+        Save the cleaned dataset as:
+
+        data/cleansed/FraudTest_clean.csv
+
+    This cleaned file will be used by the dashboard.
+
+🚀 Running the Dashboard
+
+    Install dependencies:
+
+pip install -r requirements.txt
+
+Run the Streamlit app from the app/ folder:
+
+    cd app
+    streamlit run dashboard.py
+
+    Open the provided local URL in your browser.
+
+📊 Features
+
+    Interactive Filtering by time of day, transaction amount, and merchant category.
+
+    Dynamic Charts for fraud amount distributions, merchant categories, and transaction timing.
+
+    Easy Data Pipeline with reproducible cleaning and EDA notebooks.
+
+🛠 Tech Stack
+
+    Python: Pandas, NumPy
+
+    Visualization: Plotly Express
+
+    Dashboard: Streamlit
+
+    Notebooks: Jupyter
