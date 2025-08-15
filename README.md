@@ -2,23 +2,6 @@
 Credit Card Fraud Detection Dashboard
 
 An interactive Streamlit + Plotly dashboard for exploring, filtering, and analyzing credit card transaction datasets. This project includes data cleaning workflows, fraud analysis visualizations, and a fully interactive dashboard for detecting suspicious patterns in transactions.
-📂 Project Structure
-
-credit-card-analysis/
-│
-├── app/
-│   └── dashboard.py          # Streamlit dashboard code
-│
-├── data/
-│   ├── raw/                  # Place raw dataset here
-│   └── cleansed/             # Output folder for cleaned dataset
-│
-├── notebooks/
-│   ├── data_cleaning.ipynb   # Data preprocessing steps
-│   ├── eda.ipynb              # Exploratory Data Analysis
-│   └── visualizations.ipynb   # Chart creation
-│
-└── reports/                   # Pre-generated plots
 
 📥 Downloading the Data
 
