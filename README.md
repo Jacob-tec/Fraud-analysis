@@ -24,13 +24,13 @@ Since the dataset is too large to host on GitHub, you need to download it manual
 
     Run all cells — this will:
 
-        Remove duplicates and null values
+    Remove duplicates and null values
 
-        Format columns (dates, transaction amounts)
+    Format columns (dates, transaction amounts)
 
-        Save the cleaned dataset as:
+    save the cleaned dataset as:
 
-        data/cleansed/FraudTest_clean.csv
+    data/cleansed/FraudTest_clean.csv
 
     This cleaned file will be used by the dashboard.
 
